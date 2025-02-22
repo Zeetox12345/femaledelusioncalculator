@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { CalculatorForm, type CalculatorFormData } from "./calculator/CalculatorForm";
 import { CalculatorResults } from "./calculator/CalculatorResults";
 import { InfoDialog } from "./calculator/InfoDialog";
@@ -18,11 +18,20 @@ const initialFormData: CalculatorFormData = {
 export function Calculator() {
   const [formData, setFormData] = useState<CalculatorFormData>(initialFormData);
   const [results, setResults] = useState<{ chance: number; catLadyIndex: number } | null>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handleCalculate = () => {
     const chance = calculateChances(formData);
     const catLadyIndex = calculateCatLadyIndex(chance);
     setResults({ chance, catLadyIndex });
+    
+    // Scroll to results after a short delay to ensure the results have rendered
+    setTimeout(() => {
+      resultsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 100);
   };
 
   const isFormValid = Object.values(formData).every((value) => 
@@ -48,7 +57,11 @@ export function Calculator() {
           isFormValid={isFormValid}
         />
 
-        {results && <CalculatorResults chance={results.chance} catLadyIndex={results.catLadyIndex} />}
+        {results && (
+          <div ref={resultsRef}>
+            <CalculatorResults chance={results.chance} catLadyIndex={results.catLadyIndex} />
+          </div>
+        )}
 
         <Card className="p-6 space-y-6 text-sm text-muted-foreground fade-in">
           <div className="space-y-6">
