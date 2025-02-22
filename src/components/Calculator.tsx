@@ -178,7 +178,7 @@ export function Calculator() {
           </div>
 
           <Button
-            className="w-full"
+            className="w-full calculate-btn"
             onClick={handleCalculate}
             disabled={!isFormValid}
           >
@@ -251,6 +251,9 @@ export function Calculator() {
               </div>
             </DialogContent>
           </Dialog>
+          <p className="text-sm text-muted-foreground mt-8">
+            © 2025 Delusion Female Calculator. All rights reserved.
+          </p>
         </footer>
       </div>
     </div>

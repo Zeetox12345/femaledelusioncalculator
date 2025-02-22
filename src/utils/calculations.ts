@@ -47,20 +47,23 @@ export function calculateChances(formData: CalculatorFormData): number {
   let chance = 100 * ageRangeFactor * incomeFactor * raceFactor * heightFactor;
 
   if (formData.excludeMarried) {
-    chance *= 0.5; // Assuming about 50% of men in these categories are unmarried
+    chance *= 0.5;
   }
 
   if (formData.excludeObese) {
-    chance *= 0.65; // Assuming about 35% of men are obese (BMI > 30)
+    chance *= 0.65;
   }
 
-  // Ensure the chance is between 0 and 100
   return Math.min(Math.max(chance, 0), 100);
 }
 
 export function calculateCatLadyIndex(chance: number): number {
-  // Convert chance percentage to Cat Lady Index (1-10)
-  // Higher chance = lower index
-  const rawIndex = 11 - (chance / 10);
-  return Math.min(Math.max(Math.round(rawIndex), 1), 10);
+  // More realistic calculation that creates a curve
+  // Lower chances result in higher indices, but with more variation
+  const baseIndex = 10 - (chance / 20); // This creates a base scale from 0-10
+  const randomVariation = Math.random() * 2 - 1; // Adds ±1 random variation
+  const finalIndex = Math.round(baseIndex + randomVariation);
+  
+  // Ensure the index stays between 1 and 10
+  return Math.min(Math.max(finalIndex, 1), 10);
 }
