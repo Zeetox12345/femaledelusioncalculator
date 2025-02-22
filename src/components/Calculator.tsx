@@ -171,7 +171,7 @@ export function Calculator() {
                   htmlFor="excludeObese"
                   className="text-sm text-muted-foreground"
                 >
-                  Exclude obese men (BMI > 30)
+                  Exclude obese men (BMI &gt; 30)
                 </label>
               </div>
             </div>
