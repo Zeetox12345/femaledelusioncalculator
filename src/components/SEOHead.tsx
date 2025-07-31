@@ -52,6 +52,17 @@ export const SEOHead = ({
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       
+      {/* Google Analytics */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EE1MKX5F1E"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EE1MKX5F1E');
+        `}
+      </script>
+
       {/* Schema.org Structured Data */}
       {schemaData && (
         <script type="application/ld+json">
