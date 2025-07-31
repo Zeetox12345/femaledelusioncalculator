@@ -1,10 +1,13 @@
 
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import { CalculatorForm, type CalculatorFormData } from "./calculator/CalculatorForm";
 import { CalculatorResults } from "./calculator/CalculatorResults";
 import { InfoDialog } from "./calculator/InfoDialog";
 import { calculateChances, calculateCatLadyIndex } from "@/utils/calculations";
 import { Card } from "./ui/card";
+import { Button } from "./ui/button";
+import { ArrowRight, Heart, Users, Brain, MessageSquare, Target, Camera } from "lucide-react";
 
 const initialFormData: CalculatorFormData = {
   ageRange: "",
@@ -83,6 +86,105 @@ export function Calculator() {
                 <p><strong>Likely Outcome:</strong> You might see a super-low percentage (e.g., 2% of all men). Don't panic—stats don't tell the whole story!</p>
                 <p><strong>Next Steps:</strong> Adjust your criteria (try a slightly lower income or more flexible height) to see if your odds improve. Remember, the Female Delusion Calculator is all in good fun, and real-life love can defy even the most stubborn statistics!</p>
               </div>
+            </div>
+          </div>
+        </Card>
+
+        {/* Related Pages Section */}
+        <Card className="p-8 bg-gradient-to-r from-blue-50 to-purple-50">
+          <h2 className="text-2xl font-bold text-secondary text-center mb-6">
+            Explore More Dating Tools & Advice
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <Link to="/dating-standards" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Heart className="w-8 h-8 text-red-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Dating Standards</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Understand if your expectations are realistic and learn about healthy relationship standards.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Learn More <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/relationship-compatibility" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Users className="w-8 h-8 text-green-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Compatibility Test</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Test how compatible you and your partner are with our comprehensive assessment tool.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Take Test <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/dating-tips" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <MessageSquare className="w-8 h-8 text-blue-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Dating Tips</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Expert advice for modern women to navigate dating successfully and find meaningful connections.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Get Tips <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/male-standards" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Target className="w-8 h-8 text-orange-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Male Standards</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Discover what percentage of women meet typical male dating standards and expectations.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Check Now <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/relationship-advice" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Brain className="w-8 h-8 text-purple-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Relationship Psychology</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Science-backed relationship advice to build stronger, healthier romantic connections.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Read More <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/dating-profile-tips" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Camera className="w-8 h-8 text-pink-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Profile Tips</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Create an irresistible dating profile that attracts quality matches and shows your best self.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Optimize Profile <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <p className="text-gray-700 mb-4">
+              Get the complete picture of modern dating with our comprehensive tools and expert advice.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/dating-standards">
+                <Button className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600">
+                  Explore All Tools
+                </Button>
+              </Link>
             </div>
           </div>
         </Card>
