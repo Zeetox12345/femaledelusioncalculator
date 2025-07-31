@@ -42,7 +42,7 @@ export function Calculator() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 px-4 py-12">
+    <div className="bg-gradient-to-b from-white to-gray-50 px-4 py-12">
       <div className="max-w-lg mx-auto space-y-8">
         <header className="text-center space-y-4">
           <h1 className="text-3xl font-bold text-secondary md:text-4xl">
