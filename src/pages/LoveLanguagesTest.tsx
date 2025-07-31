@@ -591,6 +591,32 @@ const LoveLanguagesTest = () => {
                   </div>
                 </CardContent>
               </Card>
+              
+              {/* Related Resources */}
+              <Card className="mt-8">
+                <CardHeader>
+                  <CardTitle className="text-center">Continue Your Relationship Journey</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <Link to="/healthy-relationships-guide" className="p-4 border rounded-lg hover:bg-gray-50 transition-colors">
+                      <Heart className="h-6 w-6 text-red-500 mb-2" />
+                      <h4 className="font-semibold mb-1">Healthy Relationships</h4>
+                      <p className="text-sm text-gray-600">Learn the foundations of strong relationships</p>
+                    </Link>
+                    <Link to="/relationship-communication-guide" className="p-4 border rounded-lg hover:bg-gray-50 transition-colors">
+                      <MessageCircle className="h-6 w-6 text-green-500 mb-2" />
+                      <h4 className="font-semibold mb-1">Communication Skills</h4>
+                      <p className="text-sm text-gray-600">Master relationship communication</p>
+                    </Link>
+                    <Link to="/dating-psychology" className="p-4 border rounded-lg hover:bg-gray-50 transition-colors">
+                      <Users className="h-6 w-6 text-purple-500 mb-2" />
+                      <h4 className="font-semibold mb-1">Dating Psychology</h4>
+                      <p className="text-sm text-gray-600">Understand the science of attraction</p>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           )}
         </div>

@@ -22,9 +22,41 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Tests & Calculators */}
+          {/* Essential Guides */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-pink-400">Tests & Calculators</h3>
+            <h3 className="text-lg font-semibold mb-4 text-pink-400">Essential Guides</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/modern-dating-guide" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Modern Dating Guide 2024
+                </Link>
+              </li>
+              <li>
+                <Link to="/healthy-relationships-guide" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Healthy Relationships Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/dating-confidence-tips" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Dating Confidence Tips
+                </Link>
+              </li>
+              <li>
+                <Link to="/relationship-communication-guide" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Communication Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/dating-psychology" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Dating Psychology
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Tests & Tools */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-pink-400">Tests & Tools</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
@@ -48,16 +80,21 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/relationship-compatibility" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Compatibility Test
+                  Relationship Compatibility
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Dating & Relationship Tips */}
+          {/* Goals & Growth */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-pink-400">Dating & Relationship Tips</h3>
+            <h3 className="text-lg font-semibold mb-4 text-pink-400">Goals & Growth</h3>
             <ul className="space-y-2">
+              <li>
+                <Link to="/relationship-goals" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Relationship Goals
+                </Link>
+              </li>
               <li>
                 <Link to="/dating-green-flags" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
                   Dating Green Flags
@@ -74,26 +111,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/texting-rules-dating" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Texting Rules for Dating
-                </Link>
-              </li>
-              <li>
-                <Link to="/dating-tips" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Dating Tips
-                </Link>
-              </li>
-              <li>
                 <Link to="/dating-profile-tips" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Profile Tips
+                  Dating Profile Tips
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Relationship Support */}
+          {/* Support & Recovery */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-pink-400">Relationship Support</h3>
+            <h3 className="text-lg font-semibold mb-4 text-pink-400">Support & Recovery</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/breakup-recovery-guide" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
@@ -106,8 +133,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/relationship-advice" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Relationship Advice
+                <Link to="/texting-rules-dating" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  Texting Rules
                 </Link>
               </li>
               <li>
@@ -117,24 +144,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/dating-success-statistics" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Dating Success Statistics
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Standards & Analysis */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-pink-400">Standards & Analysis</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/dating-standards" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Understanding Dating Standards
-                </Link>
-              </li>
-              <li>
-                <Link to="/male-standards" className="text-gray-300 hover:text-pink-400 transition-colors text-sm">
-                  Male Dating Standards
+                  Dating Statistics
                 </Link>
               </li>
             </ul>
@@ -157,14 +167,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-3 text-pink-400">About Female Delusion Calculator</h4>
             <p className="text-sm text-gray-400 max-w-4xl mx-auto leading-relaxed">
               The Female Delusion Calculator helps women understand realistic dating expectations in today's market. 
-              Our comprehensive platform includes dating calculators, relationship compatibility tests, love languages assessments, 
-              attachment style analysis, and practical dating advice backed by psychology and statistics. Whether you're exploring 
-              your dating standards, learning about green flags in relationships, planning first dates, recovering from breakups, 
-              or maintaining long-distance relationships, our evidence-based tools and guides help improve your relationship success rate.
+              Our comprehensive platform includes our modern dating guide for 2024, healthy relationship foundations, dating confidence tips, 
+              relationship communication strategies, and dating psychology insights. Whether you're exploring your dating standards, 
+              setting relationship goals, building dating confidence, learning communication skills, or understanding the psychology of attraction, 
+              our evidence-based tools and guides help improve your relationship success rate in the modern dating world.
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-2 text-xs text-gray-500">
-              <span>Dating Psychology</span> • <span>Relationship Compatibility</span> • <span>Love Languages</span> • 
-              <span>Attachment Styles</span> • <span>Dating Advice</span> • <span>Relationship Recovery</span>
+              <span>Modern Dating 2024</span> • <span>Dating Psychology</span> • <span>Relationship Goals</span> • 
+              <span>Dating Confidence</span> • <span>Communication Skills</span> • <span>Healthy Relationships</span>
             </div>
           </div>
         </div>

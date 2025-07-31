@@ -367,14 +367,19 @@ const DatingTips = () => {
             Knowledge is power, but application is key. Start implementing these dating tips today and watch your dating life transform.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/dating-profile-tips">
+            <Link to="/dating-confidence-tips">
               <Button className="bg-purple-600 hover:bg-purple-700">
-                Optimize Your Profile
+                Build Dating Confidence
               </Button>
             </Link>
-            <Link to="/relationship-advice">
+            <Link to="/modern-dating-guide">
               <Button variant="outline">
-                Get More Advice
+                Modern Dating Guide
+              </Button>
+            </Link>
+            <Link to="/healthy-relationships-guide">
+              <Button variant="outline">
+                Healthy Relationships
               </Button>
             </Link>
           </div>

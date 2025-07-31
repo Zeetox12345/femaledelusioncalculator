@@ -25,6 +25,12 @@ import DatingGreenFlags from "./pages/DatingGreenFlags";
 import FirstDateIdeas from "./pages/FirstDateIdeas";
 import BreakupRecoveryGuide from "./pages/BreakupRecoveryGuide";
 import LongDistanceRelationshipTips from "./pages/LongDistanceRelationshipTips";
+import HealthyRelationshipsGuide from "./pages/HealthyRelationshipsGuide";
+import DatingConfidenceTips from "./pages/DatingConfidenceTips";
+import ModernDatingGuide from "./pages/ModernDatingGuide";
+import RelationshipCommunicationGuide from "./pages/RelationshipCommunicationGuide";
+import DatingPsychology from "./pages/DatingPsychology";
+import RelationshipGoals from "./pages/RelationshipGoals";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -59,6 +65,12 @@ const App = () => (
                 <Route path="/first-date-ideas" element={<FirstDateIdeas />} />
                 <Route path="/breakup-recovery-guide" element={<BreakupRecoveryGuide />} />
                 <Route path="/long-distance-relationship-tips" element={<LongDistanceRelationshipTips />} />
+                <Route path="/healthy-relationships-guide" element={<HealthyRelationshipsGuide />} />
+                <Route path="/dating-confidence-tips" element={<DatingConfidenceTips />} />
+                <Route path="/modern-dating-guide" element={<ModernDatingGuide />} />
+                <Route path="/relationship-communication-guide" element={<RelationshipCommunicationGuide />} />
+                <Route path="/dating-psychology" element={<DatingPsychology />} />
+                <Route path="/relationship-goals" element={<RelationshipGoals />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

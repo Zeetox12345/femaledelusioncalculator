@@ -96,12 +96,25 @@ export function Calculator() {
             Explore More Dating Tools & Advice
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <Link to="/dating-standards" className="group">
+            <Link to="/modern-dating-guide" className="group">
+              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <Target className="w-8 h-8 text-blue-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Modern Dating Guide 2025</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Navigate today's dating landscape with the complete guide to modern relationships and online dating.
+                </p>
+                <div className="flex items-center text-blue-600 text-sm font-medium">
+                  Read Guide <ArrowRight className="w-4 h-4 ml-1" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/healthy-relationships-guide" className="group">
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <Heart className="w-8 h-8 text-red-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Dating Standards</h3>
+                <h3 className="text-lg font-bold text-secondary mb-2">Healthy Relationships</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Understand if your expectations are realistic and learn about healthy relationship standards.
+                  Learn the essential foundations for building strong, lasting relationships that thrive.
                 </p>
                 <div className="flex items-center text-blue-600 text-sm font-medium">
                   Learn More <ArrowRight className="w-4 h-4 ml-1" />
@@ -109,67 +122,54 @@ export function Calculator() {
               </Card>
             </Link>
 
-            <Link to="/relationship-compatibility" className="group">
+            <Link to="/dating-confidence-tips" className="group">
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <Users className="w-8 h-8 text-green-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Compatibility Test</h3>
+                <Users className="w-8 h-8 text-purple-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Dating Confidence</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Test how compatible you and your partner are with our comprehensive assessment tool.
+                  Build unshakeable confidence and overcome dating anxiety with proven psychological strategies.
                 </p>
                 <div className="flex items-center text-blue-600 text-sm font-medium">
-                  Take Test <ArrowRight className="w-4 h-4 ml-1" />
+                  Build Confidence <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </Card>
             </Link>
 
-            <Link to="/dating-tips" className="group">
+            <Link to="/dating-psychology" className="group">
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <MessageSquare className="w-8 h-8 text-blue-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Dating Tips</h3>
+                <Brain className="w-8 h-8 text-indigo-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Dating Psychology</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Expert advice for modern women to navigate dating successfully and find meaningful connections.
+                  Understand the science behind attraction, love, and relationships with psychological insights.
                 </p>
                 <div className="flex items-center text-blue-600 text-sm font-medium">
-                  Get Tips <ArrowRight className="w-4 h-4 ml-1" />
+                  Explore Science <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </Card>
             </Link>
 
-            <Link to="/male-standards" className="group">
+            <Link to="/relationship-goals" className="group">
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <Target className="w-8 h-8 text-orange-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Male Standards</h3>
+                <MessageSquare className="w-8 h-8 text-rose-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Relationship Goals</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Discover what percentage of women meet typical male dating standards and expectations.
+                  Set meaningful goals that strengthen your partnership and create your dream relationship.
                 </p>
                 <div className="flex items-center text-blue-600 text-sm font-medium">
-                  Check Now <ArrowRight className="w-4 h-4 ml-1" />
+                  Set Goals <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </Card>
             </Link>
 
-            <Link to="/relationship-advice" className="group">
+            <Link to="/relationship-communication-guide" className="group">
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <Brain className="w-8 h-8 text-purple-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Relationship Psychology</h3>
+                <Camera className="w-8 h-8 text-green-500 mb-4" />
+                <h3 className="text-lg font-bold text-secondary mb-2">Communication Skills</h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Science-backed relationship advice to build stronger, healthier romantic connections.
+                  Master relationship communication, resolve conflicts, and strengthen your emotional connection.
                 </p>
                 <div className="flex items-center text-blue-600 text-sm font-medium">
-                  Read More <ArrowRight className="w-4 h-4 ml-1" />
-                </div>
-              </Card>
-            </Link>
-
-            <Link to="/dating-profile-tips" className="group">
-              <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <Camera className="w-8 h-8 text-pink-500 mb-4" />
-                <h3 className="text-lg font-bold text-secondary mb-2">Profile Tips</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  Create an irresistible dating profile that attracts quality matches and shows your best self.
-                </p>
-                <div className="flex items-center text-blue-600 text-sm font-medium">
-                  Optimize Profile <ArrowRight className="w-4 h-4 ml-1" />
+                  Learn Skills <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </Card>
             </Link>
