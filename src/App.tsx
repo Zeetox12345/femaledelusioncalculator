@@ -19,6 +19,12 @@ import TextingRulesDating from "./pages/TextingRulesDating";
 import WhatMenFindAttractive from "./pages/WhatMenFindAttractive";
 import DatingAgeCalculator from "./pages/DatingAgeCalculator";
 import DatingSuccessStatistics from "./pages/DatingSuccessStatistics";
+import LoveLanguagesTest from "./pages/LoveLanguagesTest";
+import AttachmentStylesTest from "./pages/AttachmentStylesTest";
+import DatingGreenFlags from "./pages/DatingGreenFlags";
+import FirstDateIdeas from "./pages/FirstDateIdeas";
+import BreakupRecoveryGuide from "./pages/BreakupRecoveryGuide";
+import LongDistanceRelationshipTips from "./pages/LongDistanceRelationshipTips";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -47,6 +53,12 @@ const App = () => (
                 <Route path="/what-men-find-attractive" element={<WhatMenFindAttractive />} />
                 <Route path="/dating-age-calculator" element={<DatingAgeCalculator />} />
                 <Route path="/dating-success-statistics" element={<DatingSuccessStatistics />} />
+                <Route path="/love-languages-test" element={<LoveLanguagesTest />} />
+                <Route path="/attachment-styles-test" element={<AttachmentStylesTest />} />
+                <Route path="/dating-green-flags" element={<DatingGreenFlags />} />
+                <Route path="/first-date-ideas" element={<FirstDateIdeas />} />
+                <Route path="/breakup-recovery-guide" element={<BreakupRecoveryGuide />} />
+                <Route path="/long-distance-relationship-tips" element={<LongDistanceRelationshipTips />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
